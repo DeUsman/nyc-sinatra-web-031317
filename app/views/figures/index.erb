@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+<h1>Here is a list of all the figures in DataBase</h1>
+<h3>Click on the name to see Figure Details:</h3>
+<% Figure.all.each do |figure| %>
+	
+	<a href="/figures/<%=figure.id%>"><%=figure.name%></a><br>
+<% end %>
+</body>
+</html>
